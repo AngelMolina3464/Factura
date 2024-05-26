@@ -1,0 +1,19 @@
+.Updating__Container {
+  margin: 15px;
+}
+.Updating__Container p {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.Updating__Container summary {
+  font-size: 14px;
+  color: #248cd4;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .Updating__Container p {
+    font-size: 12px;
+  }
+}

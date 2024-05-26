@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+strong {
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  strong {
+    width: 100vw;
+    display: block;
+    text-align: center;
+    padding: 6px 0px;
+  }
+}

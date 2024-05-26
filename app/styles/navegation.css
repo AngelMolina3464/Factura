@@ -1,0 +1,34 @@
+.navBar__Container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .navBar__Container {
+      flex-direction: column;
+  }
+  .navBar__Container >Nav {
+    text-align: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+}
+.navBar__Container > Nav {
+  display: flex;
+  column-gap: 10px;
+}
+
+.navBar__Container > Nav > a {
+  text-decoration: none;
+  color: #248cd4 ;
+}
+
+.navBar__Container > Nav > a:hover {
+  text-decoration: underline;
+}
+
+.navBar__Container > div > img {
+  border-radius: 25px;
+}

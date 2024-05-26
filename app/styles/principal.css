@@ -1,0 +1,27 @@
+.principal__Container{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.principal__Container img{
+    border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+    .principal__Container {
+        width: 80%;
+        margin: 15px auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    .principal__Container img{
+        width: 50px;
+        height: 50px;
+    }
+    .principal__Container h2{
+        font-size: 18px;
+    }
+  
+  }

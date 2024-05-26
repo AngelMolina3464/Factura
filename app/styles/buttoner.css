@@ -1,0 +1,20 @@
+.buttoner__Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.buttoner__Container button {
+  min-width: 140px;
+  padding: 5px;
+  border-radius: 5px 10px;
+}
+
+.classColorBlue {
+  background-color: #248cd4;
+  color: white;
+}
