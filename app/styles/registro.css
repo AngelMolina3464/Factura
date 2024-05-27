@@ -22,7 +22,7 @@
 .registro__SubFlex label {
   color: #248cd4;
   font-weight: bold;
-  margin: 4px 0px;
+  margin: 4px 2px;
 }
 
 .registro__SubFlex input[type="text"] input[type="number"] input[type="date"] {

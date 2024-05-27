@@ -18,3 +18,14 @@
   background-color: #248cd4;
   color: white;
 }
+.miniButtoner {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px;
+}
+.miniButtoner button {
+  border-radius: 80px;
+  border: none;
+  padding: 2px;
+  font-size: 12px;
+}
