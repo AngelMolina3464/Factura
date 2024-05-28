@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export const FormRegistro = () => {
   const [isActiveContract, setIsActiveContract] = useState(true);
+  const [isActiveDate, setIsActiveData] = useState(true);
+
   const [data, setData] = useState({
     concepto: "",
     numeroContrato: "",
@@ -49,6 +51,16 @@ export const FormRegistro = () => {
     setIsActiveContract(" ");
   };
 
+  const handle__ActiveDate = (event) => {
+    event.preventDefault();
+    setIsActiveData("");
+  };
+
+  const handle__InactiveDate = (event) => {
+    event.preventDefault();
+    setIsActiveData(" ");
+  };
+
   return (
     <section className="registro__Container">
       <form action="">
@@ -63,17 +75,34 @@ export const FormRegistro = () => {
             onChange={HandleClick__NumContrato}
             disabled={isActiveContract}
           />
+          {/* Disable Or Enable  🖥️*/}
           <div className="miniButtoner">
             <button onClick={handle__ActiveButton}>🖋️</button>
             <button onClick={handle__InactiveButton}>❌</button>
           </div>
         </div>
+        {/* Disable Or Enable  🖥️*/}
 
         <div className="registro__SubFlex">
           <label htmlFor="">Fecha Inicio de Contrato: </label>
-          <input type="date" onChange={HandleClick__ContratoInicio} />
+          <input
+            type="date"
+            onChange={HandleClick__ContratoInicio}
+            disabled={isActiveDate}
+          />
           <label htmlFor="">Fecha Final de Contrato: </label>
-          <input type="date" onChange={HandleClick__ContratoFinal} />
+          <input
+            type="date"
+            onChange={HandleClick__ContratoFinal}
+            disabled={isActiveDate}
+          />
+
+          {/* Disable Or Enable  🖥️*/}
+          <div className="miniButtoner">
+            <button onClick={handle__ActiveDate}>🖋️</button>
+            <button onClick={handle__InactiveDate}>❌</button>
+          </div>
+          {/* Disable Or Enable  🖥️*/}
         </div>
 
         <div className="registro__SubFlex">
